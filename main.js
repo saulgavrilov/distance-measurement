@@ -6,7 +6,7 @@ navigator.mediaDevices
   })
   .then((signal) => {
     const video = document.querySelector('.video');
-    video.src = signal;
+    video.srcObject = signal;
     video.play();
   })
   .catch((e) => {
